@@ -44,9 +44,17 @@ ms.locfileid: "102108157"
 
 ### <a name="installation-steps"></a>安装步骤
 
-可运行以下命令将该工具安装为 .NET CLI 工具：`dotnet tool install -g upgrade-assistant --add-source https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json`
+可运行以下命令将该工具安装为 .NET CLI 工具：
 
-同样地，由于 .NET 升级助手是作为 .NET CLI 工具安装的，可运行以下命令来轻松更新它：`https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json`
+```dotnet
+dotnet tool install -g upgrade-assistant
+```
+
+同样地，由于 .NET 升级助手是作为 .NET CLI 工具安装的，可运行以下命令来轻松更新它：
+
+```dotnet
+dotnet tool update -g upgrade-assistant
+```
 
 有关详细的安装说明，请查看项目的 [README](https://github.com/dotnet/upgrade-assistant)。
 
